@@ -25,15 +25,15 @@ public class MeanMedian {
 		}
 
 		public static void main(String[] args) {
-			ArrayList<Integer> arr=new ArrayList<Integer>();
-			arr.add(10);
-			arr.add(20);
-			arr.add(5);
-			arr.add(50);
-			arr.add(100);
-			System.out.println("Elements are : "+arr);
-			Mean(arr);
-			System.out.println("Median is : "+Median(arr));
+			ArrayList<Integer> list=new ArrayList<Integer>();
+			list.add(10);
+			list.add(20);
+			list.add(5);
+			list.add(50);
+			list.add(100);
+			System.out.println("Elements are : "+list);
+			Mean(list);
+			System.out.println("Median is : "+Median(list));
 
 }
 }
