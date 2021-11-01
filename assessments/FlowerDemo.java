@@ -1,13 +1,16 @@
 package com.assessment;
-
+import java.util.*;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FlowerDemo {
 	
 	
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		
@@ -28,17 +31,66 @@ public class FlowerDemo {
 		Africa.put("KENYA","ORCHID");
 		
 		
+		
+		
+		//HashMap<String, ArrayList<String>> continent_name = new HashMap<String, ArrayList<String>>();
+
+		//continent.put("Asia", new ArrayList<String>());
+		/*List<String> countries = new ArrayList<String>();
+		countries.add("India","Lotus");
+		countries.add("Pakistan","Jasmine");
+		countries.add("Nepal","LALI GURANS");
+		continent_name.put(continent_name, countries);*/
+		
+		
+		
 		System.out.println("Please type the country name");
 		Scanner sc = new Scanner(System.in);
 		String continent = sc.nextLine();
+		//displayFlower demo = new displayFlower(continent);
 		sc.close();
+		
+		if(continent.equalsIgnoreCase("Asia")) {
+			Asia.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		else if(continent.equalsIgnoreCase("Europe"))
+		{
+			Europe.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		else if(continent.equalsIgnoreCase("Africa"))
+		{
+			Africa.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		
+		
+		
+		
+		/*private static void displayFlower(String continent) {
+		// TODO Auto-generated method stub
+		if(continent.equalsIgnoreCase("Asia")) {
+			Asia.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		else if(continent.equalsIgnoreCase("Europe"))
+		{
+			Europe.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		else if(continent.equalsIgnoreCase("Africa"))
+		{
+			Africa.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));  
+		}
+		
+	}*/
+		
+		
+		//Integer value = 3;
+	    /*for(Entry<String, String> entry: numbers.entrySet()) {
 
-		/*String continent = Asia.get(input);
-		if (continent == ) {
-		    System.out.println("Invalid input");
-		} else {
-		    System.out.println(output);
-		}*/
+	      // if give value is equal to value from entry
+	      // print the corresponding key
+	      if(entry.getValue() == value) {
+	        System.out.println("The key for value " + value + " is " + entry.getKey());
+	        break;
+	      }*/
 		
 		/*boolean keyValue = Asia.containsKey(continent);
 		
@@ -55,19 +107,9 @@ public class FlowerDemo {
 		
 		//Europe.forEach((k1,v1) -> System.out.println("Country : "+ k1 + ", National Flower : " + v1));
 //	}
-	
-	/*public static void displayFlower(boolean keyValue2) {
-		
-		boolean keyValue = Asia.containsKey(keyValue2);
-		
-		Asia.forEach((k,v) -> System.out.println("Country : "+ k + ", National Flower : " + v));   
-
-		
-	}*/
-
  
 
-	static void displayFlowers(int choice) 
+	/*static void displayFlowers(int choice) 
     { 
       switch (choice) {
       case '1':
@@ -118,5 +160,12 @@ public static void main(String[] args)
 	} while (inp);
 	
 	
-  } 
-   } 
+  } */
+	      
+	    }	
+	
+	
+	
+	}
+
+   
